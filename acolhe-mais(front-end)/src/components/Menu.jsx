@@ -9,7 +9,7 @@ export default function Menu() {
                 <img src={logo} alt="acolhe-mais-logo" className="logo tittle" />
                 <ul>
                     <li>
-                        <Link to='/home' className='my-link'>Home</Link>
+                        <Link to='/' className='my-link'>Home</Link>
                     </li>
                     <li>
                         <Link to='/pessoas' className='my-link'>Pessoas assistidas</Link>

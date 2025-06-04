@@ -7,15 +7,13 @@ import Home from './routes/Home/Index.jsx'
 import Pessoas from './routes/Pessoas/Index.jsx'
 import Recursos from './routes/Recursos/Index.jsx'
 import Construcao from './routes/Construção/Index.jsx'
-import Landing from './routes/Landing/Index.jsx'
 
 const router = createBrowserRouter([
   {
     path:"/",
     element: <App/>,
     children: [
-      {path:'/', element:<Landing/>},
-      {path:'/home', element:<Home/>},
+      {path:'/', element:<Home/>},
       {path:'/pessoas', element:<Pessoas/>},
       {path:'/recursos', element:<Recursos/>},
       {path:'/construcao', element:<Construcao/>},

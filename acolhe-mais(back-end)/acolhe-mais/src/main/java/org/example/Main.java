@@ -12,17 +12,15 @@ public class Main {
         port(8080);
         Gson gson = new Gson();
 
-        // ✅ Habilitar CORS
         enableCORS();
 
-        // 🔍 GET — Listar todas as pessoas
+
         get("/pessoas", (req, res) -> {
             res.type("application/json");
             List<Pessoas> pessoas = PessoaDAO.listar();
             return gson.toJson(pessoas);
         });
 
-        // ➕ POST — Adicionar pessoa
         post("/pessoas", (req, res) -> {
             res.type("application/json");
             Pessoas pessoa = gson.fromJson(req.body(), Pessoas.class);
@@ -30,7 +28,6 @@ public class Main {
             return gson.toJson(pessoa);
         });
 
-        // ❌ DELETE — Remover pessoa
         delete("/pessoas/:id", (req, res) -> {
             res.type("application/json");
             int id = Integer.parseInt(req.params(":id"));
@@ -49,7 +46,6 @@ public class Main {
             return gson.toJson(recursos);
         });
 
-        // ➕ POST — Adicionar recurso
         post("/recursos", (req, res) -> {
             res.type("application/json");
             Recursos recurso = gson.fromJson(req.body(), Recursos.class);
@@ -57,7 +53,6 @@ public class Main {
             return gson.toJson(recurso);
         });
 
-        // ❌ DELETE — Remover recurso
         delete("/recursos/:id", (req, res) -> {
             res.type("application/json");
             int id = Integer.parseInt(req.params(":id"));
@@ -65,14 +60,9 @@ public class Main {
             return "Recurso deletado com sucesso";
         });
 
-        //=====================================================
-        //==================Voluntários========================
-        //=====================================================
-
     }
 
 
-    // 🚀 Função que habilita CORS
     private static void enableCORS() {
         options("/*", (request, response) -> {
             String accessControlRequestHeaders = request.headers("Access-Control-Request-Headers");
