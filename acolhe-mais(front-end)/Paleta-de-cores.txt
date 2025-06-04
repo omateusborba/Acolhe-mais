@@ -1,0 +1,7 @@
+| Cor               | Hex       | Descrição                                                  |
+| ----------------- | -------   | ---------------------------------------------------------- |
+| **Azul Profundo** | #2B6574 | Cor principal da logo (confiança, acolhimento, serenidade) |
+| **Azul Claro**    | #85B6C2 | Para fundos, hover, detalhes suaves                        |
+| **Branco Neve**   | #FFFFFF | Fundo limpo, leveza e contraste                            |
+| **Cinza Suave**   | #E7ECEF | Para divisores, background secundário                      |
+| **Azul Petróleo** | #194952 | Para textos fortes, botões ou destaques                    |

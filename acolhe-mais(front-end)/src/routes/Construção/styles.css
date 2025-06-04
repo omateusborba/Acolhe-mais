@@ -1,0 +1,17 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.content {
+    text-align: center;
+}
+
+.logo-construcao {
+    width: 350px;
+    /* Ajuste o tamanho conforme desejar */
+    margin-bottom: 20px;
+}

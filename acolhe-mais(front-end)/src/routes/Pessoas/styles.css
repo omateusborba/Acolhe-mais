@@ -1,0 +1,60 @@
+
+.cont3 {
+    width: 920px;
+    margin: 0 auto;
+}
+
+.cont4 {
+    transition: 0.5s;
+    margin: 0 auto;
+    margin-left: 36px;
+    margin-top: 18px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 12px #0000004f;
+    width: 920px;
+    height: 100%;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.cont5 {
+    display: grid;
+    /* Ativa o Grid para o contêiner */
+    grid-template-columns: repeat(3, 1fr);
+    /* Cria 2 colunas de largura igual */
+    /* Cria 2 linhas de altura igual */
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.cont6 {
+    display: grid;
+    /* Ativa o Grid para o contêiner */
+    grid-template-columns: repeat(2, 1fr);
+    /* Cria 2 colunas de largura igual */
+    /* Cria 2 linhas de altura igual */
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #194952;
+    font-weight: bolder;
+}
+
+.idade {
+    width: 115px;
+    height: 35px;
+}
+
+.cpf,
+.sexo {
+    width: 135px;
+    height: 35px;
+}
+
+.estado,
+.cidade {
+    width: 200px;
+}
